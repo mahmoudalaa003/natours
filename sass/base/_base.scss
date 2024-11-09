@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+}
+body {
+  padding: 3rem;
+  // background-color: #F7F7F7;
+  @include respond(tab-port) {
+    padding: 0rem;
+  }
+}
